@@ -1,5 +1,7 @@
 import cv2
 import mediapipe as mp
+import pyautogui
+
 cap = cv2.VideoCapture(0)
 hand_detector = mp.solutions.hands.Hands()
 drawing_utils=mp.solutions.drawing_utils
@@ -21,6 +23,7 @@ while True:
                 print(x,y)
                 if id==8:
                     cv2.circle(img=frame, center=(x,y), radius=10, color=(0,255,255))
+                    pyautogui.moveTo(x, y)
                     
 
     if success:
