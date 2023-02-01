@@ -5,3 +5,4 @@ while True:
     if success:
         cv2.imshow("Virtual Mouse", frame)
     
+    if cv2.waitKey(1) & 0xFF==ord('q'):
