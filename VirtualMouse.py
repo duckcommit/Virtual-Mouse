@@ -16,8 +16,11 @@ while True:
             drawing_utils.draw_landmarks(frame, hand)
             landmarks=hand.landmark
             for id, landmark in enumerate(landmarks):
-                x=landmark.x*frame_width
-                y=landmark.y*frame_height
+                x=int(landmark.x*frame_width)
+                y=int(landmark.y*frame_height)
+                print(x,y)
+                if id==8:
+                    cv2.circle(img=frame, center=(x,y), radius=10, color=(0,255,255))
                     
 
     if success:
