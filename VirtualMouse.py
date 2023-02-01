@@ -12,6 +12,11 @@ while True:
     if hands:
         for hand in hands:
             drawing_utils.draw_landmarks(frame, hand)
+            landmarks=hand.landmark
+            for id, landmark in enumerate(landmarks):
+                x=landmark.x
+                y=landmark.y
+                    
 
     if success:
         cv2.imshow("Virtual Mouse", frame)
