@@ -1,6 +1,6 @@
-# Virtual Mouse
+# Virtual Mouse (Computer Vision in Python)
 
-This software is for lazy people like me who wants to control their device using their fingertips. This program allows you to control the mouse and left click by using your index and middle fingers. The technology used in this project is python and OpenCV.
+This software is for lazy people like me who wants to control their device using their fingertips. This program allows you to control the mouse and left click by using your index and middle fingers. The technology used in this project is Python and OpenCV.
 
 # Requirements
 
